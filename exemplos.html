@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplos Reais — FactFeed</title>
+  <meta name="description" content="Exemplos educativos de Fake News, com explicação do motivo de cada uma ser falsa e comparação com uma versão verdadeira.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <span class="signal-mark"><span></span><span></span><span></span></span>
+        FactFeed
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Início</a>
+        <a href="tipos.html">Tipos de Fake News</a>
+        <a href="como-identificar.html">Como Identificar</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="exemplos.html" class="active">Exemplos Reais</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="container page-header">
+      <span class="eyebrow">Casos educativos</span>
+      <h1>Exemplos reais de Fake News</h1>
+      <p class="lede">Os casos abaixo são fictícios, criados apenas para fins educativos. Eles representam situações parecidas com o que circula nas redes sociais todos os dias.</p>
+    </div>
+
+    <section style="padding-bottom: 96px;">
+      <div class="container">
+
+        <div class="filter-bar" role="group" aria-label="Filtrar exemplos por tipo de Fake News">
+          <button class="filter-chip active" type="button" data-type="todos">Todos</button>
+          <button class="filter-chip" type="button" data-type="falsa">Notícia falsa</button>
+          <button class="filter-chip" type="button" data-type="enganoso">Conteúdo enganoso</button>
+          <button class="filter-chip" type="button" data-type="clickbait">Clickbait</button>
+          <button class="filter-chip" type="button" data-type="imagem">Imagem manipulada</button>
+          <button class="filter-chip" type="button" data-type="contexto">Fora de contexto</button>
+        </div>
+
+        <div class="example-block" data-type="falsa">
+          <span class="example-tag">Caso 01 · Notícia completamente falsa</span>
+          <div class="compare-grid">
+            <div class="compare-card is-false">
+              <span class="compare-label">✗ Falso</span>
+              <h4>"Cidade decreta feriado surpresa após decisão de tribunal misterioso"</h4>
+              <p>Mensagem que circula em grupos de WhatsApp anunciando um feriado inesperado, sem citar nenhum órgão oficial ou número de decreto.</p>
+            </div>
+            <div class="compare-card is-true">
+              <span class="compare-label">✓ Verdadeiro</span>
+              <h4>Calendário oficial de feriados municipais</h4>
+              <p>O site oficial da prefeitura mantém o calendário de feriados do ano, com decretos publicados e número de registro de cada um.</p>
+            </div>
+          </div>
+          <div class="example-explain">
+            <strong>Por que é falso:</strong> não existe nenhuma fonte oficial citada, não há número de decreto e nenhum canal da prefeitura confirma a informação. Um feriado real é sempre publicado em diário oficial.
+          </div>
+        </div>
+
+        <div class="example-block" data-type="enganoso">
+          <span class="example-tag">Caso 02 · Conteúdo enganoso</span>
+          <div class="compare-grid">
+            <div class="compare-card is-false">
+              <span class="compare-label">✗ Enganoso</span>
+              <h4>"Pesquisa revela que 90% das pessoas preferem o Produto X"</h4>
+              <p>O dado é real, mas a pesquisa foi feita com apenas 20 pessoas, todas clientes do próprio produto — um grupo pequeno e nada representativo.</p>
+            </div>
+            <div class="compare-card is-true">
+              <span class="compare-label">✓ Versão completa</span>
+              <h4>Pesquisa de opinião com metodologia divulgada</h4>
+              <p>Uma pesquisa confiável informa quantas pessoas participaram, quem são e como foram escolhidas, permitindo avaliar se o resultado é representativo.</p>
+            </div>
+          </div>
+          <div class="example-explain">
+            <strong>Por que é enganoso:</strong> o número "90%" é verdadeiro, mas omite informações importantes sobre o tamanho e o perfil do grupo pesquisado, dando uma impressão exagerada da realidade.
+          </div>
+        </div>
+
+        <div class="example-block" data-type="clickbait">
+          <span class="example-tag">Caso 03 · Título sensacionalista (clickbait)</span>
+          <div class="compare-grid">
+            <div class="compare-card is-false">
+              <span class="compare-label">✗ Clickbait</span>
+              <h4>"Esse alimento simples pode estar destruindo sua saúde sem você saber!"</h4>
+              <p>Título alarmista que promete uma revelação chocante, mas o texto apenas repete recomendações nutricionais básicas e já conhecidas.</p>
+            </div>
+            <div class="compare-card is-true">
+              <span class="compare-label">✓ Título informativo</span>
+              <h4>"Estudo associa consumo excessivo de açúcar a riscos à saúde"</h4>
+              <p>Um título equivalente, mas honesto: descreve o achado real do estudo, sem exagero e sem prometer mais do que o conteúdo entrega.</p>
+            </div>
+          </div>
+          <div class="example-explain">
+            <strong>Por que é clickbait:</strong> a linguagem é feita para chocar e gerar cliques ("destruindo sua saúde", "sem você saber"), mas o conteúdo real é bem mais simples e nada revolucionário.
+          </div>
+        </div>
+
+        <div class="example-block" data-type="imagem">
+          <span class="example-tag">Caso 04 · Imagem manipulada</span>
+          <div class="compare-grid">
+            <div class="compare-card is-false">
+              <span class="compare-label">✗ Manipulada</span>
+              <h4>Foto "comprova" multidão em evento que teve pouco público</h4>
+              <p>Uma imagem é editada para parecer mais cheia do que realmente estava, cortando os espaços vazios e duplicando partes da multidão.</p>
+            </div>
+            <div class="compare-card is-true">
+              <span class="compare-label">✓ Imagem original</span>
+              <h4>Foto original do mesmo ângulo, sem edição</h4>
+              <p>A imagem não editada mostra um público bem menor, condizente com outras fotos e vídeos do mesmo evento.</p>
+            </div>
+          </div>
+          <div class="example-explain">
+            <strong>Por que é manipulada:</strong> uma busca reversa de imagem revela cortes, duplicações de pessoas ou diferenças de iluminação que indicam edição da foto original.
+          </div>
+        </div>
+
+        <div class="example-block" data-type="contexto">
+          <span class="example-tag">Caso 05 · Desinformação fora de contexto</span>
+          <div class="compare-grid">
+            <div class="compare-card is-false">
+              <span class="compare-label">✗ Fora de contexto</span>
+              <h4>Vídeo antigo de protesto é divulgado como "acontecendo agora"</h4>
+              <p>Um vídeo real de um protesto de anos atrás é compartilhado sem data, dando a entender que se trata de um acontecimento recente.</p>
+            </div>
+            <div class="compare-card is-true">
+              <span class="compare-label">✓ Contexto correto</span>
+              <h4>Mesmo vídeo, com data e local originais informados</h4>
+              <p>Ao buscar o vídeo pela descrição ou por uma busca reversa de imagem, é possível encontrar a publicação original com a data correta.</p>
+            </div>
+          </div>
+          <div class="example-explain">
+            <strong>Por que é fora de contexto:</strong> o vídeo em si não foi alterado, mas a informação sobre quando e onde ele foi gravado está errada — o que muda completamente a interpretação do fato.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>FactFeed - Informação com confiança</p>
+      <div class="footer-tags">
+        <span>PTIC</span>
+        <span>PW</span>
+        <span>Inglês</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

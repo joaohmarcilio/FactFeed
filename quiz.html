@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Interativo — FactFeed</title>
+  <meta name="description" content="Teste seus conhecimentos sobre Fake News com um quiz interativo e veja sua pontuação final.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <span class="signal-mark"><span></span><span></span><span></span></span>
+        FactFeed
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Início</a>
+        <a href="tipos.html">Tipos de Fake News</a>
+        <a href="como-identificar.html">Como Identificar</a>
+        <a href="quiz.html" class="active">Quiz</a>
+        <a href="exemplos.html">Exemplos Reais</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="container page-header">
+      <span class="eyebrow">Teste seus conhecimentos</span>
+      <h1>Quiz: você sabe identificar Fake News?</h1>
+      <p class="lede">Cinco perguntas rápidas baseadas em situações do dia a dia. Responda com calma e veja sua pontuação ao final.</p>
+    </div>
+
+    <section style="padding-bottom: 96px;">
+      <div class="container quiz-wrap">
+        <div id="quiz-app" class="quiz-panel">
+
+          <div id="quiz-question-screen" class="quiz-screen active">
+            <div class="quiz-progress">
+              <span id="quiz-progress-label">Pergunta 1 de 5</span>
+              <div class="progress-track">
+                <div id="quiz-progress-fill" class="progress-fill"></div>
+              </div>
+            </div>
+
+            <p id="quiz-question-text" class="quiz-question">Carregando pergunta...</p>
+
+            <div id="quiz-options" class="quiz-options">
+            </div>
+
+            <div id="quiz-feedback" class="quiz-feedback"></div>
+
+            <div id="quiz-next-wrap" class="quiz-next" style="display:none;">
+              <button id="quiz-next-btn" class="btn btn-primary" type="button">Próxima pergunta</button>
+            </div>
+          </div>
+
+          <div id="quiz-result-screen" class="quiz-screen">
+            <div class="quiz-result">
+              <p id="quiz-score-number" class="score-big">0 / 5</p>
+              <p id="quiz-score-message">Resultado</p>
+              <div class="quiz-result-actions">
+                <button id="quiz-restart-btn" class="btn btn-ghost" type="button">Refazer o quiz</button>
+                <a href="exemplos.html" class="btn btn-primary">Ver exemplos reais</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>FactFeed - Informação com confiança</p>
+      <div class="footer-tags">
+        <span>PTIC</span>
+        <span>PW</span>
+        <span>Inglês</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

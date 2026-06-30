@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Como Identificar Fake News — FactFeed</title>
+  <meta name="description" content="Guia prático com passos simples para verificar a fonte, a data e a imagem de uma notícia antes de acreditar ou compartilhar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <span class="signal-mark"><span></span><span></span><span></span></span>
+        FactFeed
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Início</a>
+        <a href="tipos.html">Tipos de Fake News</a>
+        <a href="como-identificar.html" class="active">Como Identificar</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="exemplos.html">Exemplos Reais</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="container page-header">
+      <span class="eyebrow">Guia prático</span>
+      <h1>Como identificar uma Fake News</h1>
+      <p class="lede">Você não precisa ser especialista para desconfiar na hora certa. Esses cinco passos simples já reduzem muito o risco de cair em uma notícia falsa.</p>
+    </div>
+
+    <section>
+      <div class="container">
+        <div class="guide-list">
+
+          <div class="guide-step">
+            <span class="guide-num">01</span>
+            <div>
+              <h3>Verifique a fonte</h3>
+              <p>Olhe quem publicou a notícia. É um site conhecido, com nome e histórico, ou uma página recém-criada e sem identificação clara? Sites sérios costumam ter uma seção "Sobre" e assinam suas matérias.</p>
+              <span class="guide-tip">Dica rápida: procure o nome do site fora da própria publicação.</span>
+            </div>
+          </div>
+
+          <div class="guide-step">
+            <span class="guide-num">02</span>
+            <div>
+              <h3>Confira a data</h3>
+              <p>Muitas Fake News são, na verdade, notícias antigas reaproveitadas fora de contexto. Antes de se assustar com algo, confira quando aquilo realmente aconteceu.</p>
+              <span class="guide-tip">Dica rápida: pesquise trechos do texto junto com a palavra "data" ou o ano suspeito.</span>
+            </div>
+          </div>
+
+          <div class="guide-step">
+            <span class="guide-num">03</span>
+            <div>
+              <h3>Compare com outros sites</h3>
+              <p>Se a notícia for realmente importante, outros veículos confiáveis também vão estar noticiando o mesmo fato. Se só uma página fala sobre isso, é motivo para desconfiar.</p>
+              <span class="guide-tip">Dica rápida: busque o assunto em pelo menos dois sites diferentes e conhecidos.</span>
+            </div>
+          </div>
+
+          <div class="guide-step">
+            <span class="guide-num">04</span>
+            <div>
+              <h3>Desconfie de manchetes exageradas</h3>
+              <p>Títulos com letras maiúsculas, excesso de exclamações ou promessas absolutas ("nunca visto", "100% comprovado") são sinais clássicos de clickbait.</p>
+              <span class="guide-tip">Dica rápida: leia a notícia completa antes de formar uma opinião só pelo título.</span>
+            </div>
+          </div>
+
+          <div class="guide-step">
+            <span class="guide-num">05</span>
+            <div>
+              <h3>Cheque as imagens</h3>
+              <p>Fotos e vídeos podem ser editados, recortados ou tirados de outro contexto. Ferramentas de busca reversa de imagem ajudam a descobrir a origem real de uma foto.</p>
+              <span class="guide-tip">Dica rápida: clique com o botão direito na imagem e procure "pesquisar imagem" no navegador.</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section style="border-top:1px solid var(--border-subtle); padding-bottom: 96px;">
+      <div class="container">
+        <span class="eyebrow">Experimente</span>
+        <h2 class="section-heading">Simulador: verifique um título</h2>
+        <p class="section-intro">Cole ou digite um título de notícia abaixo. Essa ferramenta é apenas uma simulação educativa — ela procura por palavras comuns em conteúdo sensacionalista, mas não substitui uma checagem de verdade.</p>
+
+        <div class="verify-tool">
+          <h3>Verificador de manchetes (simulado)</h3>
+          <p class="tool-desc">Esta ferramenta não se conecta a nenhuma base de dados real. Ela apenas demonstra, de forma didática, o tipo de linguagem que costuma indicar uma notícia pouco confiável.</p>
+
+          <form id="verify-form" class="verify-form">
+            <input
+              type="text"
+              id="verify-input"
+              placeholder='Ex: "URGENTE: cientistas escondem a verdade sobre..."'
+              aria-label="Digite o título da notícia para verificar"
+              required
+            >
+            <button type="submit" class="btn btn-primary">Verificar notícia</button>
+          </form>
+
+          <div id="verify-result"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>FactFeed - Informação com confiança</p>
+      <div class="footer-tags">
+        <span>PTIC</span>
+        <span>PW</span>
+        <span>Inglês</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
